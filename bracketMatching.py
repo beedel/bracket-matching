@@ -7,10 +7,10 @@ def bracketMatching(string):
     while index < len(string) and correctlyFormatted:
         char = string[index]
         index += 1
-        if char != "(" and char != ")":
+        if char not in "({[" and char not in "]})":
             pass
         else:
-            if char == "(":
+            if char in "({[":
                 s.push(char)
             else:
                 if s.isEmpty():
