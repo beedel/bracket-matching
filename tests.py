@@ -20,5 +20,6 @@ class TestBracketMatching(unittest.TestCase):
         self.assertEqual(bracketMatching("a [dog]"), True, "'a [dog]' should be true")
         self.assertEqual(bracketMatching("a [dog"), False, "'a [dog' should be false")     
 
+
 if __name__ == "__main__":
     unittest.main()
